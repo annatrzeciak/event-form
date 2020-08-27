@@ -12,15 +12,17 @@ class MainContent extends Component {
     return (
       <div className="MainContent">
         <Router>
-          <Header/>
-          <Switch>
-            <Route path="/saved-forms">
-              <SavedForms />
-            </Route>
-            <Route path="/">
-              <EventForm />
-            </Route>
-          </Switch>
+          <Header />
+          <div className="container">
+            <Switch>
+              <Route path="/saved-forms">
+                <SavedForms />
+              </Route>
+              <Route path="/">
+                <EventForm />
+              </Route>
+            </Switch>
+          </div>
         </Router>
       </div>
     );
